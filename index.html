@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelajaran web</title>
+</head>
+<body>
+    <!-- Tags untuk teks -->
+    <!-- <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <h7>, <p> -->
+        <h1>ini heading 1</h1>
+        <h2>ini heading 2</h2>
+        <h3>ini heading 3</h3>
+        <h4>ini heading 4</h4>
+        <h5>ini heading 5</h5>
+        <h6>ini heading 6</h6>
+    <!-- Tags <P> digunakan untuk membuat paragraf-->
+        <p>ini contoh tags p</p>
+    
+
+
+    <!-- Tags untuk pendukung teks-->
+    <!-- <br>,  <hr>, <strong>, <b>, <u>, <em>, <i>, -->
+        <!-- Tags <br> digunakan untuk menambahkan baris baru pada sebuah paragraf-->
+        <br>ini br
+        <!-- Tags <hr> digunakan untuk menambahkan garis horizontal -->
+        <hr>ini contoh penggunaan tags hr<hr>
+        <!-- Tags <em> digunakan untuk penekanan pada sebuah kalimat-->
+        <em>ini contoh penggunaan tags em</em>
+        <!-- Tags <i> digubakan untuk membuat teks menjadi italic -->
+        <br><i>ini contoh penggunaan tags i</i>
+        <!-- Tags <strong> digunakan untuk memperkuat sebuah kalimat -->
+        <br><strong>ini contoh penggunaan tags strong </strong>
+        <!-- Tags <b> digunakan untuk membuat teks menjadi bold -->
+        <br><b>ini contoh penggunaan tags b</b>
+        <!-- Tags <u> digunakan untuk membuat teks menjadi underlined -->
+        <br><u>ini contoh penggunaan tags u</u>
+
+
+    <!-- Tags yang digunakan untuk membuat list baik berurut maupun tidak -->
+    
+    <!-- Tags <ol> digunakan untuk membuat list secara berututan -->
+    <h3>list terurut (ol)</h3>
+    <ol>
+        <li>bangun</li>
+        <li>makan</li>
+        <li>tdiur</li>
+    </ol>
+
+    <!-- Tags <ul> digunakan untuk membuat list tanpa ada urutan-->
+    <h4>list tak berurut (ul)</h4>
+    <ul>
+        <li>nasi uduk</li>
+        <li>nasi goreng</li>
+        <li>nasi kuning</li>
+    </ul>
+
+    <!-- Tags <dl> digunakan untuk membuat definition list dan mempunyai Tags <dt> dan <dd> -->
+    <h4>list definisi (dl)</h4>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Languange</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheet</dd>
+    </dl>
+    
+
+    <!-- Tags <a> atau Hyperlink digunaka untuk mengkait sesuatu baik berupa file atau link -->
+        
+    <!-- contoh penggunaan eksternal link -->
+    <h4>penggunaan eksternal link</h4>
+    <p>link lagu <a href="https://youtu.be/f1tDFtMjwAE">Twenty one pilot - stressed out</a></p>
+        
+    <!-- contoh pengguna internal link/relative url -->
+    <h4>penggunaan internal link</h4>
+    <p>pergi ke <a href="index2.html">Halaman 2</a></p>
+    <p>pergi ke <a href="halaman3/index3.html">Halaman 3</a></p>
+        
+    <!-- contoh penggunaan page anchor atau bagian tertentu dari sebuah halaman -->
+        <p>pergi ke <a href="index2.html#bagian2">Halaman 2 bagian 2</a></p>
+        <p>pergi ke <a href="index2.html#bagian3">Halaman 2 bagian 3</a></p>
+    
+    <!-- Tags yang digunakan untuk menambahkan gambar-->
+    <!-- atribut yang ada pada img yaitu : (src)sebagai sumber dari gambar yang akan ditampilkan, (alt)sebagai alternatif jika gambar utama mengalami eror,
+    (width)untuk mengatur lebar gambar yang dapat ditulis dedngan satuan px/%, (height)untuk mengatur tinggi gambar yang dapat ditulis dengan satuan px/%, (title)untuk memberikan judul atau nama pada gambar -->
+    <!-- internal resource / gambar yang kita miliki dalam satu folder yang sama -->
+    <h3>penggunaan img</h3>
+    <p>internal resource (satu folder sama)</p>
+    <img src="android.png" alt="android"><br>
+    <!-- internal resource / gambar yang kita miliki namun berada di folder lain-->
+    <p>internal resource (beda folder)</p>
+    <img src="img/logo.png" alt="logo"><br>
+
+    <!-- menggabungkan hyperlink dengan img -->
+    <br><h3>menggabungkan Hyperlink dengan img </h3>
+    <a href="index2.html">
+        <img src="img/berikutnya.png" alt=""><br>
+    </a>
+
+
+    <!-- Tags <form> -->
+    <!-- element input -->
+    <form action="">
+        <!-- element input yang menggunakan type text digunakan untuk menulis sebuah kalimat -->
+        <label for="username">username :</label>
+        <input type="text" id="username">
+            <br>
+        <!-- element input yang menggunakan type password digunakan untuk menulis password -->
+        <label for="password">password :</label>
+        <input type="password" id="password">
+            <br>
+        <!-- element input yang menggunakan type radio digunakan untuk memilih 2 pilihan berbeda -->
+        <label for="laki-lakI">jeniskelamin :</label>
+        <input type="radio" name="jeniskelamin" id="laki-laki"><label for="">laki-laki</label>
+        <input type="radio" name="jeniskelamin" id="perempuan"><label for="">perempuan</label><br>
+        <!--  -->
+        <label for="">Tempat tanggal lahir :</label>
+        <select name="ttl" id="tanggal">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+            <option value="">10</option>
+            <option value="">11</option>
+            <option value="">12</option>
+            <option value="">13</option>
+            <option value="">14</option>
+            <option value="">15</option>
+            <option value="">16</option>
+        </select>
+        <select name="ttl" id="bulan">
+            <option value="">Januari</option>
+            <option value="">Februari</option>
+            <option value="">Maret</option>
+            <option value="">April</option>
+            <option value="">Mei</option>
+        </select>
+        <select name="ttl" id="">
+            <option value="">2004</option>
+            <option value="">2005</option>
+            <option value="">2006</option>
+            <option value="">2007</option>
+            <option value="">2008</option>
+        </select>
+        <!--  -->
+        <br>
+        <label for="saran">ketik saranmu disini :</label><br>
+        <textarea name="" id="saran" cols="30" rows="10"></textarea>
+        <!-- Tags <button> digunakan sebagai tombol untuk melakukan riset,submit atau hal yang lebih spesifik-->
+        <br>
+        <button type="submit">kirim</button>
+        <button type="reset">reset</button>        
+        </form>
+
+</html>
